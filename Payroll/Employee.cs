@@ -24,8 +24,6 @@ public class Employee
 
     public override string ToString()
     {
-        return string.Format("\nEmployeed ID: {0}\nEmployee Name: {1}\nAddress: {2}\n
-        Phone Number: {3}\nHour Rate: {4}", EmployeeId, EmployeeName, Address, PhoneNumber,
-        HourlyRate);
+        return string.Format("\nEmployeed ID: {0}\nEmployee Name: {1}\nAddress: {2}\nPhone Number: {3}\nHourly Rate: ${4:F2}", EmployeeId, EmployeeName, Address,  PhoneNumber, HourlyRate);
     }
 }
