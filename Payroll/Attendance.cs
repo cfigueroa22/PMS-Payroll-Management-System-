@@ -21,7 +21,7 @@ public class Attendance : Employee
     public override string ToString()
     {
         return string.Format(
-            "{0}Hours Worked: {1:F1}\nDays Worked: {2}\nOvertime: {3}",
+            "{0}\nHours Worked: {1:F1}\nDays Worked: {2}\nOvertime: {3}",
             base.ToString(), HoursWork, DaysWork, OverTime);
     }
 
