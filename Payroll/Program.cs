@@ -18,9 +18,7 @@ public class PMS
 
         //This is the attendance class using Polymorphism with a list
         Employee employee = new Employee(2, "Carlos Figueroa", "23 Water St.", "438-123-5432", 20.00);
-        departments = new Department("Electronic Media", "Software Developer", 4);
-        Console.WriteLine(departments);
-
+        
         Attendance att = new Attendance(3, "Daniel Jefferson", "432 Jefferson Ave.", "342-342=5533", 20.00, 35, 7, false);
 
         List<Employee> employees = new List<Employee>();
@@ -32,10 +30,12 @@ public class PMS
         {
             PrintAttendance(a);
         }
-
+        
         Calculate calc = new Calculate();
         calc.GetPayment(15.00, 40);
 
+        departments = new Department("Electronic Media", "Software Developer", 4);
+        Console.WriteLine(departments);
         
 
     }

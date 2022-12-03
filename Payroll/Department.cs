@@ -15,8 +15,8 @@ public class Department : Departments
         YearsEmployeed = years;
     }
 
-    public override string ToString()
+    public override string YearOfEmployment()
     {
-        return YearsEmployeed;
+        return "\nYears of Employment: " + YearsEmployeed;
     }
 }

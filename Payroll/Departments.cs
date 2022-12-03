@@ -21,8 +21,8 @@ public abstract class Departments
     public override string ToString()
     {
         return
-            "\nDepartment Name: " + DeptName +
+            "Department Name: " + DeptName +
             "\nJob Position: " + JobPosition +
-            "\nYears of Employment: " + YearsEmployeed;
+            YearOfEmployment();
     }
 }
