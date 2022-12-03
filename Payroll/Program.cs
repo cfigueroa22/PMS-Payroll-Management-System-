@@ -13,9 +13,14 @@ public class PMS
         //This is the employee class using Composition       
         Employee e = new Employee(1, "John Smith", "123 Washington St.", "757-222-3333", 15.00);
         Console.WriteLine(e.ToString());
+        Departments departments = new Department("Human Resources", "Recruiter", 5);
+        Console.WriteLine(departments); 
 
         //This is the attendance class using Polymorphism with a list
         Employee employee = new Employee(2, "Carlos Figueroa", "23 Water St.", "438-123-5432", 20.00);
+        departments = new Department("Electronic Media", "Software Developer", 4);
+        Console.WriteLine(departments);
+
         Attendance att = new Attendance(3, "Daniel Jefferson", "432 Jefferson Ave.", "342-342=5533", 20.00, 35, 7, false);
 
         List<Employee> employees = new List<Employee>();
@@ -30,6 +35,8 @@ public class PMS
 
         Calculate calc = new Calculate();
         calc.GetPayment(15.00, 40);
+
+        
 
     }
 

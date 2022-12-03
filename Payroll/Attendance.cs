@@ -11,7 +11,7 @@ public class Attendance : Employee
     public int DaysWork { get; set; }
     public bool OverTime { get; set; }
 
-    public Attendance(int id, string employeeName, string address, string phoneNum, double rate, double hoursWork, int daysWork, bool overTime) : base(id, employeeName, address, phoneNum,rate)
+    public Attendance(int id, string employeeName, string address, string phoneNum, double rate, double hoursWork, int daysWork, bool overTime) : base(id, employeeName, address, phoneNum, rate)
     {
         HoursWork = hoursWork;
         DaysWork = daysWork;

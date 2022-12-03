@@ -5,7 +5,7 @@ Assignment: CIS317 Payroll Management System
 
 Description:
 */
-public class Employee 
+public class Employee
 {
     public int EmployeeId { get; set; }
     public string EmployeeName { get; set; }
