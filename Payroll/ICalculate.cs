@@ -7,5 +7,5 @@ Description:
 */
 interface ICalculate
 {
-    int GetPayment();
+    void GetPayment(double rate, double hoursWork);
 }

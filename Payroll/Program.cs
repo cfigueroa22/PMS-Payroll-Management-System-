@@ -28,6 +28,9 @@ public class PMS
             PrintAttendance(a);
         }
 
+        Calculate calc = new Calculate();
+        calc.GetPayment(15.00, 40);
+
     }
 
     private static void PrintAttendance(Employee employee)
