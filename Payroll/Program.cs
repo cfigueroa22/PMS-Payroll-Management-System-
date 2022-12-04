@@ -36,6 +36,19 @@ public class PMS
 
         departments = new Department("Electronic Media", "Software Developer", 4);
         Console.WriteLine(departments);
+
+        Console.WriteLine("\n---Sensitive Information---\n");
+        Sensitive sensitive = new Sensitive("cfigueroa", "password1", "email@gmail.com");
+        Console.WriteLine(sensitive);
+
+        sensitive.UpdateUsername("djefferson");
+        sensitive.UpdatePassword("password1");
+        sensitive.UpdateEmail("email@gmail.com");
+
+        Console.WriteLine("\n---Sensitive Information---\n");
+        Console.WriteLine("Username: " + sensitive.Username);
+        Console.WriteLine("Password: " + sensitive.Password);
+        Console.WriteLine("E-Mail: " + sensitive.Email);
         
 
     }
