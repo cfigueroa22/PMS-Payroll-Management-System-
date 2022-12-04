@@ -9,6 +9,7 @@ public class PMS
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("\nCarlos Figueroa - PMS (Payroll Management System)\n");
 
         //This is the employee class using Composition       
         Employee e = new Employee(1, "John Smith", "123 Washington St.", "757-222-3333", 15.00);
